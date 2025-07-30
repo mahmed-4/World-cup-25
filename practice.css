@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.box-sizing {
+  background-color: aquamarine;
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  gap: 10px;
+  margin-bottom: 60px;
+
+  /* ====using flex===== */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* ===========using grid========== */
+  /* display: grid;
+    place-content: center; */
+
+  /* =============== Using position and transform ============== */
+  /* position: relative; */
+}
+
+.content-box {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  /* box-sizing: content-box; */
+  padding: 40px;
+
+  /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.border-box {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+/* Flag with Z-index */
+.flag-green {
+  height: 300px;
+  width: 500px;
+  background-color: green;
+  position: relative;
+}
+
+.flag-rounded-red {
+  height: 150px;
+  width: 150px;
+  background-color: red;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.flag-rounded-white {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
